@@ -1,0 +1,16 @@
+lapply(cov_id_update,names)
+
+#Kapan tanggal pembaharuan data penambahan kasus?
+cov_id_update$penambahan$tanggal
+
+#Berapa jumlah penambahan kasus sembuh?
+cov_id_update$penambahan$jumlah_sembuh
+
+#Berapa jumlah penambahan kasus meninggal?
+cov_id_update$penambahan$jumlah_meninggal
+
+#Berapa jumlah total kasus positif hingga saat ini?
+cov_id_update$total$jumlah_positif
+
+#Berapa jumlah total kasus meninggal hingga saat ini?
+cov_id_update$total$jumlah_meninggal
