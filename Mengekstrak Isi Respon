@@ -1,6 +1,12 @@
-#Mengakses Isi Respon
+#Mengekstrak Isi Respon
 
 library(httr)
 set_config(config(ssl_verifypeer = 0L))
 resp <- GET("https://storage.googleapis.com/dqlab-dataset/update.json")
 cov_id_raw <- content(resp, as = "parsed", simplifyVector = TRUE) 
+
+#Mengekstrak Isi Respon - 2
+
+length(cov_id_raw)
+names(cov_id_raw)
+cov_id_update <- cov_id_raw$update
