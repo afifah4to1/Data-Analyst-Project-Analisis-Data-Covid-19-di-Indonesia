@@ -1,0 +1,5 @@
+# Mengakses API covid.go.id
+
+library(httr)
+set_config(config(ssl_verifypeer = 0L))
+resp <- GET ("https://data.covid19.go.id/public/api/update.json")
